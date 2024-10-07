@@ -29,8 +29,7 @@ jobs:
       contents: read
       checks: write
   build:
-    needs:[integration]
-
+    needs: [integration]
     runs-on: ubuntu-latest
     permissions:
       contents: read
